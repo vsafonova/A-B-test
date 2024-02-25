@@ -1,6 +1,13 @@
 /* Common styles*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family:'Nunito Sans', Arial, Helvetica, sans-serif;
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
   color: #363636;
   background-color: white;
   margin: 0;
@@ -10,12 +17,11 @@ body {
   font-weight: normal;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   body {
-      overflow-x: hidden;
+    overflow-x: hidden;
   }
 }
-
 
 .wrapper {
   display: flex;
@@ -24,14 +30,7 @@ body {
   flex-direction: column;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.header .container,
-.footer .container {
+.header .container {
   max-width: 1320px;
 }
 
@@ -41,37 +40,35 @@ body {
   padding: 0 32px;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .container,
-  .header .container,
-  .footer .container {
-      max-width: none;
-      padding: 0 18px;
+  .header .container {
+    max-width: none;
+    padding: 0 18px;
   }
 }
 
 .header-navigation__item:hover,
-.logo, 
+.logo,
 .city,
 .header-navigation__item.active {
-  color: #E3B873;
+  color: #e3b873;
 }
 
-.header, 
-.projects,
-.footer {
+.header,
+.projects {
   background-color: #131313;
 }
 
 /* Style of button */
 
 button {
-  background: #E3B873;
-  box-shadow:  0px 5px 15px rgba(227, 184, 115, 0.3);
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
   border-radius: 2px;
-  border: 1px solid transparent; 
+  border: 1px solid transparent;
   font-family: inherit;
-  font-style: italic; 
+  font-style: italic;
   font-size: 0.55em;
   line-height: inherit;
   cursor: pointer;
@@ -79,10 +76,10 @@ button {
   height: 51px;
 }
 
-button:not(.form-button):hover,
+button:hover,
 button.active {
   background: rgba(0, 0, 0, 0);
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-shadow: none;
 }
 
@@ -94,8 +91,8 @@ button,
 }
 
 .title,
-.projects-list{
-  font-family: 'Yeseva One','Times New Roman', Times, serif;
+.projects-list {
+  font-family: "Yeseva One", "Times New Roman", Times, serif;
 }
 
 .title,
@@ -107,22 +104,9 @@ h3 {
   font-size: 0.9em;
 }
 
-.subtitle {
-  font-size: inherit;
-  text-align: center;
-  color:#181818;
-}
-
-@media screen and (max-width:767px) {
-  .subtitle{
-      font-size: 1.1em;
-      line-height: 138.6%;
-  }
-}
-
 button,
 a {
-  color:inherit;
+  color: inherit;
 }
 
 a {
@@ -153,9 +137,9 @@ header,
   font-size: 0.55em;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .header .container {
-      height: 57px;
+    height: 57px;
   }
 }
 
@@ -174,27 +158,17 @@ header,
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 }
 
-.application {
-  display: none;
-}
-
-@media screen and (max-width:767px) {
-  .submit {
-      display: none;
+@media screen and (max-width: 767px) {
+  .header-block button {
+    width: 100%;
   }
-  
-  .application{
-      margin-top: 2.37em;
-      display: block;
+
+  .submit {
+    margin-top: 1em;
   }
 
   .request {
-      display: none;
-  }
-
-  .header-block button,
-  .form-button{
-      width: 100%;
+    margin-left: 2em;
   }
 }
 
@@ -205,18 +179,18 @@ header,
 .contacts-phone .header-navigation__link {
   text-decoration: underline;
   margin-right: 4.1em;
-  color:  #E3B873;
+  color: #e3b873;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .contacts-phone .header-navigation__link {
-      color: white;
-      text-decoration: none;
-      margin-right: 0;
+    color: white;
+    text-decoration: none;
+    margin-right: 0;
   }
 
   .header-navigation {
-      display: none;
+    display: none;
   }
 }
 
@@ -239,16 +213,16 @@ header,
   height: 707px;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .header-block-background {
-      background: url(./images/backgroundmobile.png) no-repeat;
-      height: 476px;
-      background-position: center;
-      background-size: cover;
+    background: url(./images/backgroundmobile.png) no-repeat;
+    height: 476px;
+    background-position: center;
+    background-size: cover;
   }
 
   .header-block {
-      height: 476px;
+    height: 476px;
   }
 }
 
@@ -267,14 +241,14 @@ header,
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-@media screen and (max-width:767px) {
-  .header-block .container{
-      padding-top: 85px;
-      margin: 0;
+@media screen and (max-width: 767px) {
+  .header-block .container {
+    padding-top: 85px;
+    margin: 0;
   }
 
   .container-overlay {
-      height: 476px;
+    height: 476px;
   }
 }
 
@@ -287,30 +261,18 @@ h1 ~ .paragraph {
   line-height: 1.64;
   padding-top: 0.7em;
   padding-bottom: 1.15em;
-} 
-
-.text-2 {
-  display: none;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   h1 ~ .paragraph {
-      font-size: 0.7em;
-      line-height: 135.84%;
-      padding-top: 1.15em;
-      padding-bottom: 3.7em;
+    font-size: 0.7em;
+    line-height: 135.84%;
+    padding-top: 1.15em;
+    padding-bottom: 3.7em;
   }
 
   h1 {
-      font-size: 1.15em;
-  }
-
-  .text-1 {
-      display: none;
-  }
-
-  .text-2 {
-      display: block;
+    font-size: 1.15em;
   }
 }
 
@@ -322,29 +284,12 @@ h1 ~ .paragraph {
   padding-bottom: 2rem;
 }
 
-.projects-block__mobile {
-  display: none;
-}
-
-@media screen and (max-width:767px) {
-  .projects-block__left, .projects-block__right {
-      display: none;
-  }
-  
-  .projects-block__mobile {
-      display: block;
-  }
-
-  .projects .container {
-      padding-top: 1.8em;
-      padding-left: 0.9em;
-      padding-right: 0.9em;
-      padding-bottom: 2rem;
-  }
+.size-font {
+  font-size: 1.3em;
 }
 
 .projects-block__left {
-  padding-top:  3.45em;
+  padding-top: 3.45em;
 }
 
 .projects-block__right {
@@ -363,8 +308,8 @@ h1 ~ .paragraph {
 
 .projects-list__link:hover,
 .projects-list__link.active {
-  color: #E3B873;
-  border-bottom: 1px solid #E3B873;
+  color: #e3b873;
+  border-bottom: 1px solid #e3b873;
   padding-bottom: 0.5em;
   cursor: pointer;
 }
@@ -374,93 +319,53 @@ h1 ~ .paragraph {
   height: 482px;
 }
 
-.projects-chairs img {
-  filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
-}
-
-
 .completed-projects {
   font-size: 1.35em;
   letter-spacing: -0.07em;
-  color: #E3B873;
+  color: #e3b873;
 }
 
-.completed-projects ~ .paragraph{
+.completed-projects ~ .paragraph {
   font-size: 0.7em;
   line-height: 1.93;
   margin-top: 2.5em;
   margin-bottom: 3em;
 }
 
-@media screen and (max-width:767px) {
-  .completed-projects ~ .paragraph {
-      font-size: 0.55em;
-      line-height: 158.48%;
-      text-align: center;
-      margin-top: 2em;
-  }
-
   .completed-projects {
-      font-size: 1.1em;
-      line-height: 138.6%;
-  }
-  
-  .projects-room {
-      margin-top: 72px;
-      height: 241px;
-      background-size: cover;
-      background-position: center;
-      position: relative;
+    font-size: 1.1em;
+    line-height: 138.6%;
   }
 
-  .sliderNavigation {
-      justify-content: space-between;
-      position: relative;
-      top: -23%;
-      margin-right: 0.65em;
-      margin-left: 0.65em;
-      display: flex;
+ .sliderNavigation {
+    justify-content: space-between;
+    position: relative;
+    top: -23%;
+    margin-right: 0.65em;
+    margin-left: 0.65em;
+    display: flex;
   }
-}
+
 .feature-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #E3B873;
-}
-
-@media screen and (max-width:767px) {
-  .feature-title {
-      font-size: 0.7em;
-      line-height: 138.6%;
-  }
+  color: #e3b873;
 }
 
 .feature-title ~ .paragraph {
   font-size: 0.65em;
   line-height: 1.62;
   margin-top: 0.7em;
-} 
+}
 
 .paragraph.style {
   margin-top: 0;
 }
 
-.projects-block__left--features{
+.projects-block__left--features {
   display: grid;
   grid-template-columns: auto auto;
   grid-row-gap: 34px;
-}
-
-@media screen and (max-width:767px) {
-  .feature-title ~ .paragraph{
-      font-size: 0.55em;
-      line-height: 135.84%;
-      margin-top: 1em;
-  }
-
-  .projects-block__left--features {
-      grid-row-gap: 27px;
-  }
 }
 
 /* Слайдер в Completed projects */
@@ -493,5 +398,5 @@ h1 ~ .paragraph {
 }
 
 .carousel-dots.active {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }

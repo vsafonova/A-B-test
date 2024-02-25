@@ -1,4 +1,9 @@
-export default function Carousel({ currentIndex, setIndex, totalElements }) {
+export default function Carousel({
+  currentIndex,
+  setIndex,
+  totalElements,
+  variant,
+}) {
   const dots = [];
 
   for (let i = 0; i < totalElements; i++) {
@@ -13,10 +18,28 @@ export default function Carousel({ currentIndex, setIndex, totalElements }) {
 
   function goPrevious() {
     setIndex(currentIndex - 1);
+    trackAction("Previous");
   }
 
   function goNext() {
     setIndex(currentIndex + 1);
+    trackAction("Next");
+  }
+
+  let clickCounter = 0;
+
+  // tracking user's interaction
+
+  function trackAction(target) {
+    clickCounter++;
+    console.log({
+      event: "ctaClick",
+      cta: "link",
+      countClick: clickCounter,
+      target,
+      variant,
+      time: new Date(),
+    });
   }
 
   return (
