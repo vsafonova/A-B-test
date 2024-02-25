@@ -204,7 +204,7 @@ header,
 }
 
 .header-block-background {
-  background: url(./images/background.png) no-repeat;
+  background: url(images/background.png) no-repeat;
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -215,7 +215,7 @@ header,
 
 @media screen and (max-width: 767px) {
   .header-block-background {
-    background: url(./images/backgroundmobile.png) no-repeat;
+    background: url(images/backgroundmobile.png) no-repeat;
     height: 476px;
     background-position: center;
     background-size: cover;
